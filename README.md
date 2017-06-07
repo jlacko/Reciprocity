@@ -8,4 +8,4 @@ I was not satisfied with the published data - some manufacturers quote only [thr
 
 I have therefore created a simple project, which uses R to estimate a more general function for the film reciprocity failure, display a chart and interpolate a table of adjusted times for exposure values (½ EV steps from one second to one minute). 
 
-The project uses log - log transformation to linearize power law function (formula y = a × y ^ b). I have found this to be the closest estimate of all simple functions, and later discovered it was the the type of function Karl Schwarzschild used all those years ago.
+The project uses log - log transformation to linearize power law function (formula y = a × x ^ b). I have found this to be the closest estimate of all simple functions, and later discovered it was the the type of function Karl Schwarzschild used all those years ago.
