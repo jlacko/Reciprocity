@@ -1,6 +1,6 @@
 # Reciprocity
 
-[Reciprocity failure](https://en.wikipedia.org/wiki/Reciprocity_(photography)), also called Schwarzschild effect, is a well known feature of film photography. For exposure times between 1/1,000 of a second and 1 second applies a simple relationship: exposure value = light intensity × time. This relationship is used by photographers to determine camera settings (aperture and exposure time).
+[Reciprocity failure](https://en.wikipedia.org/wiki/Reciprocity_(photography)), also called Schwarzschild effect, is a well known feature of film photography. For exposure times between 1/1,000 of a second and 1 second a simple relationship applies: exposure value = light intensity × time. This relationship is used by photographers to determine camera settings (aperture and exposure time).
 
 For exposure times longer than 1 second this simple relationship breaks down, and the exposure time measured with a light meter needs to be adjusted upwards (for correct exposure a longer than expected time is necessary). This breakdown of laws of reciprocity is different for various film emulsions, and a number of conversion tables are provided by film manufacturers.
 
