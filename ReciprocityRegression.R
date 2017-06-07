@@ -87,8 +87,8 @@ ggplot() +
   annotate("text", x = 50, y = 5, label = as.character(as.expression(eq)), parse = TRUE, size = rel(3))
 
 # saving of results... ----
-ggsave(paste(FilmLabel,"ReciprocityChart.png"), h = 6, w = 8, dpi = 100, type = "cairo-png")
-write_csv(times, paste(FilmLabel,"ReciprocityTable.csv"))
+ggsave(paste(FilmLabel,"ReciprocityChart.png", sep= ""), h = 6, w = 8, dpi = 100, type = "cairo-png")
+write_csv(times, paste(FilmLabel,"ReciprocityTable.csv", sep = ""))
 
 # Cleanup
 rm(eq)
