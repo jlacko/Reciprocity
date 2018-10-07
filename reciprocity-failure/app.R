@@ -31,8 +31,8 @@ ui <- fluidPage(
 
         #action buttons
         tags$hr(),
-        actionLink("new", "New Row"),
-        actionLink("submit", "Insert Row"),
+        actionLink("new", "Reset"), code('/'),
+        actionLink("submit", "Insert Row"), code('/'),
         actionLink("delete", "Delete Row")
       ),
       
