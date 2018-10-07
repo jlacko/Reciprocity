@@ -31,18 +31,17 @@ ui <- fluidPage(
 
         #action buttons
         tags$hr(),
-        actionLink("new", "New"),
-        actionLink("submit", "Insert"),
-        actionLink("delete", "Delete"),
-        
-        downloadLink("getData", label = "Save CSV")
+        actionLink("new", "New Row"),
+        actionLink("submit", "Insert Row"),
+        actionLink("delete", "Delete Row")
       ),
       
       # Show a plot of the generated distribution
       mainPanel(
          plotOutput("regPlot",  height = "600px"),
          h4("Standard exposure times (in ½ stop intervals)"),
-         tableOutput("modelled")
+         tableOutput("modelled"),
+         downloadLink("getData", label = "Save table as CSV file")
       )
    )
 )

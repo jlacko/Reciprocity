@@ -5,8 +5,8 @@ account: jlacko
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 485310
-bundleId: 1627112
+bundleId: 1628230
 url: https://jlacko.shinyapps.io/reciprocity-failure/
-when: 1538860199.77555
+when: 1538939128.76201
 asMultiple: FALSE
 asStatic: FALSE
