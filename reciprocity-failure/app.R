@@ -61,7 +61,7 @@ server <- function(input, output, session) {
                       modelled = exp(coef(expmodel)[1])*measured^coef(expmodel)[2])
       
       # calculate standard exposure times (in 1/2 stop incrementes)
-      times <<- tibble(measured = c(1,2,3,4,6,8,11,16,23,32,45,64,90,128,180),
+      times <<- tibble(measured = c(1,1.41,2,3,4,6,8,11,16,23,32,45,64,90,128,180),
                       adjusted = round(exp(coef(expmodel)[1])*measured^coef(expmodel)[2], 0))
       
       
@@ -134,7 +134,7 @@ server <- function(input, output, session) {
    # display table modelled
    output$modelled <- renderTable({
      
-     as.data.frame(t(times[1:14, ]))
+     as.data.frame(t(times[-2, ]))
      
    }, digits = 0, colnames = F, width = "50%")
     
