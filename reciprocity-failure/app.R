@@ -91,9 +91,11 @@ server <- function(input, output, session) {
      }
    })
    
-   # Press "New" button -> display empty record
+   # Press "Reset" button -> všechno vylít!
    observeEvent(input$new, {
-     UpdateInputs(CreateDefaultRecord(), session)
+     ResetData(list(measured = input$measured, 
+                    adjusted = input$adjusted),
+               session)
    })
    
    # Press "Delete" button -> delete from data

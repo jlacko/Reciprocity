@@ -65,6 +65,16 @@ UpdateData <- function(data) {
     arrange(measured)
 }
 
+ResetData <- function(data, session) {
+  
+  updateTextInput(session, "make", value = "A Custom Film Make")
+  data <- CastData(data)
+  data$label <- paste(data$measured, '/', data$adjusted)
+  
+  ChrtSrc <<- data %>%
+    arrange(measured)
+}
+
 
 DeleteData <- function(data) {
   asdf <- ChrtSrc$measured != data[1] | ChrtSrc$adjusted != data[2]
